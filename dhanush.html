@@ -12,6 +12,14 @@
     <p>tasklist | findstr<span class="fa fa-copy" onclick="copyToClipboard('tasklist | findstr', this)"></span></p>
     <p>taskill /f /pid <span class="fa fa-copy" onclick="copyToClipboard('taskill /f /pid', this)"></span></p>
     <p>netsh interface  ip show  address | findstr "IP address"<span class="fa fa-copy" onclick='copyToClipboard("netsh interface  ip show  address | findstr \"IP address\" ", this)'></span></p>
+    <p>netsh advfirewall  set allprofiles  state off<span class="fa fa-copy" onclick='copyToClipboard("netsh advfirewall  set allprofiles  state off", this)'></span></p>
+    <p>netsh advfirewall  set allprofiles  state on<span class="fa fa-copy" onclick='copyToClipboard("netsh advfirewall  set allprofiles  state on", this)'></span></p>
+    <p>ping<span class="fa fa-copy" onclick='copyToClipboard("ping", this)'></span></p>
+    <p>ping -t<span class="fa fa-copy" onclick='copyToClipboard("ping -t", this)'></span></p>
+    <p>tracert-d<span class="fa fa-copy" onclick='copyToClipboard("tracert -d", this)'></span></p>
+    <p>netstat<span class="fa fa-copy" onclick='copyToClipboard("netstat", this)'></span></p>
+    <p>netstat -af<span class="fa fa-copy" onclick='copyToClipboard("netstat -af", this)'></span></p>
+
 
     <script>
       function copyToClipboard(text, icon) {
