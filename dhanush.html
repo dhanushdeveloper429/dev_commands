@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Copy to Clipboard</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  </head>
+  <body>
+
+<h1>Dev Commands</h1>
+
+    <p>tasklist | findstr<span class="fa fa-copy" onclick="copyToClipboard('tasklist | findstr', this)"></span></p>
+    <p>taskill /f /pid <span class="fa fa-copy" onclick="copyToClipboard('taskill /f /pid', this)"></span></p>
+    <p>netsh interface  ip show  address | findstr "IP address"<span class="fa fa-copy" onclick='copyToClipboard("netsh interface  ip show  address | findstr \"IP address\" ", this)'></span></p>
+
+    <script>
+      function copyToClipboard(text, icon) {
+        navigator.clipboard.writeText(text);
+        icon.textContent = 'Copied!';
+        setTimeout(function() {
+          icon.textContent = '';
+        }, 1000);
+      }
+    </script>
+
+    <style>
+      .fa fa-copy {
+        cursor: pointer;
+        margin-left: 0px;
+      }
+    </style>
+  </body>
+</html>
